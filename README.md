@@ -18,7 +18,7 @@ OMNI/
 ├── router.py
 ├── utils.py
 ├── workflow.py
-├── main.py
+├── app.py
 ├── requirements.txt
 └── README.md
 ```
@@ -174,7 +174,7 @@ The **OMNI Career Assistant** is more than just a tool; it's a comprehensive, pe
 
 3. **Run the Streamlit App:**
    ```bash
-   streamlit run main.py
+   streamlit run app.py
    ```
 
 

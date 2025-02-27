@@ -1,3 +1,9 @@
+from langchain_community.tools import DuckDuckGoSearchResults
+from langchain.agents import create_tool_calling_agent, AgentExecutor
+from utils import save_file
+from langchain_core.messages import HumanMessage, AIMessage
+from langchain_groq import ChatGroq
+
 class ResumeMaker:
     def __init__(self, prompt):
         # Initialize the chat model, prompt template, and search tool for resume creation

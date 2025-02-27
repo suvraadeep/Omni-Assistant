@@ -1,3 +1,9 @@
+from langchain_community.tools import DuckDuckGoSearchResults
+from langchain.agents import create_tool_calling_agent, AgentExecutor
+from langchain_core.messages import HumanMessage, AIMessage
+from utils import save_file
+from langchain_groq import ChatGroq
+
 class InterviewAgent:
     def __init__(self, prompt):
         # Initialize the chat model, prompt template, and search tool for use in the agent

@@ -1,3 +1,11 @@
+# agents/job_search_agent.py
+from langchain_community.tools import DuckDuckGoSearchResults
+from utils import save_file
+from langchain.agents import create_tool_calling_agent, AgentExecutor
+from langchain_core.messages import HumanMessage, AIMessage
+from utils import save_file
+from langchain_groq import ChatGroq
+
 class JobSearch:
     def __init__(self, prompt):
         # Initialize the chat model, prompt template, and search tool for job search assistance

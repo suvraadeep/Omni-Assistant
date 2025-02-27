@@ -1,7 +1,8 @@
-from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
-from langchain_community.tools import DuckDuckGoSearchResults #searching tools
-from langchain.agents import create_tool_calling_agent
-from langchain.agents import AgentExecutor
+from langchain_community.tools import DuckDuckGoSearchResults
+from langchain.agents import create_tool_calling_agent, AgentExecutor
+from utils import save_file
+from langchain_core.messages import HumanMessage, AIMessage
+from langchain_groq import ChatGroq
 
 class LearningResourceAgent:
     def __init__(self, prompt):

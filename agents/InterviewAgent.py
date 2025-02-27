@@ -1,6 +1,7 @@
 from langchain_community.tools import DuckDuckGoSearchResults
 from langchain.agents import create_tool_calling_agent, AgentExecutor
 from langchain_core.messages import HumanMessage, AIMessage
+from langchain_core.messages import AIMessage, HumanMessage, SystemMessage, trim_messages
 from utils import save_file
 from langchain_groq import ChatGroq
 from langchain_core.prompts import ChatPromptTemplate

@@ -5,6 +5,7 @@ from langchain_core.messages import HumanMessage, AIMessage
 from langchain_groq import ChatGroq
 from langchain_core.prompts import ChatPromptTemplate
 from utils import trim_conversation
+from langchain_core.messages import AIMessage, HumanMessage, SystemMessage, trim_messages
 
 
 class LearningResourceAgent:

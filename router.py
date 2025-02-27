@@ -1,7 +1,6 @@
 from langchain_core.prompts import ChatPromptTemplate, SystemMessage, HumanMessage, MessagesPlaceholder
 from langchain_groq import ChatGroq
 from utils import show_md_file
-from langchain_core.prompts import ChatPromptTemplate, SystemMessage, HumanMessage, MessagesPlaceholder
 from utils import show_md_file
 from langchain_core.prompts import ChatPromptTemplate
 

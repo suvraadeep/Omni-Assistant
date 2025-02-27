@@ -17,7 +17,14 @@ from router import (
     route_interview,
     route_learning
 )
+from agents.ResumeMaker import ResumeMaker
+from agents.JobSearch import JobSearch
+from agents.InterviewAgent import InterviewAgent
+from agents.LearningResourceAgent import LearningResourceAgent
+
 from typing import Dict, TypedDict
+
+
 
 # Define a State type for consistent state dictionaries
 class State(TypedDict):

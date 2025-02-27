@@ -4,7 +4,20 @@ from utils import show_md_file
 from utils import show_md_file
 from langchain_core.prompts import ChatPromptTemplate
 
+from agents.ResumeMaker import ResumeMaker
+from agents.JobSearch import JobSearch
+from agents.InterviewAgent import InterviewAgent
+from agents.LearningResourceAgent import LearningResourceAgent
+
 llm=ChatGroq(model="deepseek-r1-distill-llama-70b")
+
+from typing import Dict, TypedDict
+
+# Define a State type for consistent state dictionaries
+class State(TypedDict):
+    query: str
+    category: str
+    response: str
 
 def categorize(state: State) -> State:
     """Categorizes the user query into one of four main categories: Learn Generative AI Technology, Resume Making, Interview Preparation, or Job Search."""

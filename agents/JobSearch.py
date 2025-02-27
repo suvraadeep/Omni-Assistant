@@ -5,6 +5,7 @@ from langchain.agents import create_tool_calling_agent, AgentExecutor
 from langchain_core.messages import HumanMessage, AIMessage
 from utils import save_file
 from langchain_groq import ChatGroq
+from langchain_core.prompts import ChatPromptTemplate
 
 class JobSearch:
     def __init__(self, prompt):

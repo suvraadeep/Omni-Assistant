@@ -2,6 +2,7 @@ from langchain_core.messages import AIMessage, HumanMessage, SystemMessage, trim
 import os
 from datetime import datetime
 import streamlit as st
+from langchain_core.prompts import ChatPromptTemplate
 
 def trim_conversation(prompt):
     """Trims conversation history to retain only the latest messages within the limit."""

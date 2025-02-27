@@ -45,7 +45,7 @@ workflow.add_node("handle_resume_making", handle_resume_making)  # Resume making
 workflow.add_node("handle_interview_preparation", handle_interview_preparation)  # Interview prep queries
 workflow.add_node("job_search", job_search)  # Job search queries
 workflow.add_node("mock_interview", mock_interview)  # Mock interview sessions
-workflow.add_node("interview_topics_questions", interview_topics_questions)  # Interview topic questions
+workflow.add_node("interview_topics_questions", interview_topics_questions)  # Interview topic queries
 workflow.add_node("tutorial_agent", tutorial_agent)  # Tutorial creation agent
 workflow.add_node("ask_query_bot", ask_query_bot)  # General Q&A for learning
 

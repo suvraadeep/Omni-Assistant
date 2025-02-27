@@ -4,7 +4,7 @@ from datetime import datetime
 import streamlit as st
 from langchain_core.prompts import ChatPromptTemplate
 from typing import Dict, TypedDict
-
+from IPython.display import display, Image, Markdown
 from agents.ResumeMaker import ResumeMaker
 from agents.JobSearch import JobSearch
 from agents.InterviewAgent import InterviewAgent

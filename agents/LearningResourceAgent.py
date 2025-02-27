@@ -4,6 +4,8 @@ from utils import save_file
 from langchain_core.messages import HumanMessage, AIMessage
 from langchain_groq import ChatGroq
 from langchain_core.prompts import ChatPromptTemplate
+from utils import trim_conversation
+
 
 class LearningResourceAgent:
     def __init__(self, prompt):

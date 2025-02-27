@@ -1,6 +1,10 @@
 # Omni-Assistant
 Your All time Career Assistant
 
+
+Format:
+
+```
 OMNI/
 ├── agents/
 │   ├── __init__.py
@@ -14,5 +18,6 @@ OMNI/
 ├── main.py
 ├── requirements.txt
 └── README.md
+```  
 
 

@@ -2,7 +2,7 @@
 from langgraph.graph import StateGraph, END, START
 from IPython.display import display, Image, Markdown
 from langchain_core.runnables.graph import MermaidDrawMethod
-from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from router import (
     categorize,
     handle_learning_resource,
@@ -23,6 +23,9 @@ from agents.InterviewAgent import InterviewAgent
 from agents.LearningResourceAgent import LearningResourceAgent
 
 from typing import Dict, TypedDict
+
+from dotenv import load_dotenv
+load_dotenv()  # This loads environment variables from your .env file
 
 
 

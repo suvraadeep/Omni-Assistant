@@ -6,7 +6,10 @@ from langchain_core.messages import HumanMessage, AIMessage
 from langchain_core.messages import AIMessage, HumanMessage, SystemMessage, trim_messages
 from utils import save_file
 from langchain_groq import ChatGroq
-from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
+
+from dotenv import load_dotenv
+load_dotenv()  # This loads environment variables from your .env file
 
 class JobSearch:
     def __init__(self, prompt):

@@ -3,10 +3,12 @@ from langchain.agents import create_tool_calling_agent, AgentExecutor
 from utils import save_file
 from langchain_core.messages import HumanMessage, AIMessage
 from langchain_groq import ChatGroq
-from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from utils import trim_conversation
 from langchain_core.messages import AIMessage, HumanMessage, SystemMessage, trim_messages
 
+from dotenv import load_dotenv
+load_dotenv()  # This loads environment variables from your .env file
 
 class LearningResourceAgent:
     def __init__(self, prompt):

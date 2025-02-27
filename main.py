@@ -2,7 +2,7 @@
 import streamlit as st
 from workflow import run_user_query, app
 from PIL import Image
-from langgraph import MermaidDrawMethod
+from langchain_core.runnables.graph import MermaidDrawMethod
 
 st.title("OMNI Chatbot with Workflow")
 

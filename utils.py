@@ -3,13 +3,9 @@ from langchain_core.messages import AIMessage, HumanMessage, SystemMessage, trim
 import os
 from datetime import datetime
 import streamlit as st
-from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from typing import Dict, TypedDict
 from IPython.display import display, Image, Markdown
-from agents.ResumeMaker import ResumeMaker
-from agents.JobSearch import JobSearch
-from agents.InterviewAgent import InterviewAgent
-from agents.LearningResourceAgent import LearningResourceAgent
 
 # Define a State type for consistent state dictionaries
 class State(TypedDict):

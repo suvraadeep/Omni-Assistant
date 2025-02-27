@@ -2,7 +2,7 @@ from langchain_core.prompts import ChatPromptTemplate, SystemMessage, HumanMessa
 from langchain_core.llm import ChatGroq
 from utils import show_md_file
 
-llm = ChatGroq(model="llama-3.3-70b-versatile")
+llm=ChatGroq(model="deepseek-r1-distill-llama-70b")
 
 def categorize(state: State) -> State:
     """Categorizes the user query into one of four main categories: Learn Generative AI Technology, Resume Making, Interview Preparation, or Job Search."""
